@@ -1,27 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.logo {
+  font-family: "Lexend Zetta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4rem;
+  color: rgba(255, 255, 255, .9)
+}
+
+#section-quick {
+  background: url('/bg.png') no-repeat;
+  background-size: 140vw 100vh;
+  background-position: center;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+.card-generator {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.input {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 11px;
+}
+
+.tf-input-label {
+  font-variant: small-caps;
+  font-weight: 500;
+  color: #B271FF;
+  width: 100px;
+  padding-left: 5px;
 }

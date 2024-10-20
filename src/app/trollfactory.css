@@ -1,0 +1,17 @@
+.tf-input-top {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+
+.tf-input-middle {
+  border-radius: 0px;
+}
+  
+.tf-input-bottom {
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}

@@ -9,7 +9,7 @@ body {
 }
 
 .logo {
-  font-family: "Lexend Zetta", sans-serif;
+  font-family: 'Lexend Zetta', sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -23,6 +23,18 @@ body {
   background-position: center;
 }
 
+#section-quick-content {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+                    linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+  background-size: 150px 150px;
+  background-position: 40% 60%;
+  animation: sqc-backpos 20s infinite;
+}
+
+@keyframes sqc-backpos {
+  50% {background-position: 0% 0%;}
+}
+
 h4 {
   font-size: 1.5rem;
 }
@@ -32,8 +44,15 @@ h4 {
 }
 
 .input {
+  background: rgba(255, 255, 255, 0.6);
+  transition: all 0.2s;
+}
+
+.input:active,
+.input:focus,
+.input:focus-within,
+.input:hover {
   background: rgba(255, 255, 255, 0.8);
-  border-radius: 11px;
 }
 
 .tf-input-label {
@@ -42,4 +61,40 @@ h4 {
   color: #B271FF;
   width: 100px;
   padding-left: 5px;
+}
+
+.sparkle {
+  position: absolute;
+  z-index: 0;
+}
+
+#sparkle-0 {
+  top: 15%;
+  left: 10%;
+}
+
+#sparkle-1 {
+  top: 25%;
+  right: 10%;
+}
+
+#sparkle-2 {
+  bottom: 20%;
+  left: 40%;
+}
+
+#generate-btn {
+  background: rgba(255, 255, 255, 0.7);
+  color: #B271FF;
+  width: min-content;
+  border: 0px;
+  border-radius: 100px;
+  position: absolute;
+  right: 0;
+  bottom: -10%;
+  margin-right: -20px;
+}
+
+#generate-btn:hover {
+  background: rgba(255, 255, 255, 0.85);
 }

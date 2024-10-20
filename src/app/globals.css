@@ -27,13 +27,11 @@ body {
   background-image: linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
                     linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
   background-size: 150px 150px;
-  background-position: 40% 60%;
-  animation: sqc-backpos 20s infinite;
+  animation: bg-scrolling 1.5s infinite;
+  animation-timing-function: linear;
 }
 
-@keyframes sqc-backpos {
-  50% {background-position: 0% 0%;}
-}
+@keyframes bg-scrolling { 100% {background-position: 150px 150px} }
 
 h4 {
   font-size: 1.5rem;

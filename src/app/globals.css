@@ -59,8 +59,19 @@ h4 {
   font-variant: small-caps;
   font-weight: 500;
   color: #B271FF;
-  width: 100px;
+  width: 110px;
   padding-left: 5px;
+}
+
+input,
+.label-text {
+  font-variant: small-caps;
+}
+
+select {
+  font-family: sans-serif;
+  color: #B271FF;
+  text-align-last: center;
 }
 
 .sparkle {

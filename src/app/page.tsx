@@ -9,13 +9,36 @@ export default function Home() {
           <h1 className="logo">TrollFactory</h1>
           <div className="card card-generator mt-7 mb-20">
             <div className="card-body">
-              <label className="input flex items-center gap-2 tf-input-top">
-                <span className="tf-input-label">First name</span>
-                <input type="text" className="grow" placeholder="First name" />
+              <select className="input tf-input-top select w-full">
+                <option disabled selected>Dataset</option>
+                <option>🇵🇱 polski / Polska</option>
+                <option>🇺🇸 English / USA</option>
+                <option>🇨🇳 中国人 / 中国</option>
+              </select>
+              <label className="input flex items-center gap-2 tf-input-middle">
+                <span className="tf-input-label">Sex</span>
+                <div className="form-control">
+                  <label className="label cursor-pointer pl-0">
+                    <span className="label-text pr-2">Female</span>
+                    <input type="radio" name="radio-10" className="radio checked:bg-primary" defaultChecked />
+                  </label>
+                </div>
+                <div className="form-control">
+                  <label className="label cursor-pointer">
+                    <span className="label-text px-2">Male</span>
+                    <input type="radio" name="radio-10" className="radio checked:bg-secondary" />
+                  </label>
+                </div>
+                <div className="form-control">
+                  <label className="label cursor-pointer">
+                    <span className="label-text px-2">Any</span>
+                    <input type="radio" name="radio-10" className="radio checked:bg-secondary" />
+                  </label>
+                </div>
               </label>
               <label className="input flex items-center gap-2 tf-input-middle">
-                <span className="tf-input-label">Last name</span>
-                <input type="text" className="grow" placeholder="Last name" />
+                <span className="tf-input-label">First name</span>
+                <input type="text" className="grow" placeholder="First name" />
               </label>
               <label className="input flex items-center gap-2 tf-input-bottom">
                 <span className="tf-input-label">Last name</span>

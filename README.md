@@ -13,7 +13,7 @@ React front-end for [TrollFactory](https://github.com/stanislavovsky/TrollFactor
 
 ## Development
 
-After installing the `trollfactory` Python package, clone this repository:
+After installing the `trollfactory` Python package and setting up the API, clone this repository:
 
 ```bash
 git clone git@github.com:stanislawowski/TrollFactory-Web.git

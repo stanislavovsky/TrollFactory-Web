@@ -26,10 +26,10 @@
 /* TODO: cleanup & move to trollfactory.css */
 
 #generate-btn {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgb(255 255 255 / 70%);
   color: #B271FF;
   width: min-content;
-  border: 0px;
+  border: 0;
   border-radius: 100px;
   position: absolute;
   right: -7%;
@@ -45,5 +45,5 @@
 }
 
 #generate-btn:hover {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgb(255 255 255 / 85%);
 }

@@ -9,6 +9,9 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      'mono': ['Inconsolata', 'ui-monospace', 'SFMono-Regular'],
+    },
     extend: {
       colors: {
         background: "var(--background)",

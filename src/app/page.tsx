@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="tf-bg-blur">
+    <div className="tf-bg-blur font-mono">
       <div className="flex h-screen tf-bg-grid">
         <img src="/sparkle.png" className="absolute left-1/10 top-1/6" />
         <img src="/sparkle1.png" className="absolute top-1/4 right-1/10" />
@@ -9,18 +9,18 @@ export default function Home() {
           <h1 className="tf-logo font-bold text-6xl">TrollFactory</h1>
           <div className="card bg-wt-50 mt-7 mb-20">
             <div className="card-body">
-              <select className="input tf-input tf-input-top text-tf-0 select text-last-center w-full">
+              <select className="input tf-input tf-input-top text-tf-0 select font-medium text-base text-last-center w-full">
                 <option disabled selected>Dataset</option>
                 <option>🇵🇱 polski / Polska</option>
                 <option>🇺🇸 English / USA</option>
                 <option>🇨🇳 中国人 / 中国</option>
               </select>
               <label className="input flex items-center gap-2 tf-input tf-input-middle">
-                <span className="tf-input-label pl-1 w-28 font-medium small-caps text-tf-0">Sex</span>
+                <span className="tf-input-label pl-1 w-28 font-medium font-mono text-tf-0">Sex</span>
                 <div className="form-control">
                   <label className="label cursor-pointer pl-0">
                     <span className="label-text pr-2">Female</span>
-                    <input type="radio" name="radio-10" className="radio checked:bg-primary" />
+                    <input type="radio" name="radio-10" className="radio checked:bg-secondary" />
                   </label>
                 </div>
                 <div className="form-control">
@@ -37,12 +37,12 @@ export default function Home() {
                 </div>
               </label>
               <label className="input flex items-center gap-2 tf-input tf-input-middle">
-                <span className="tf-input-label pl-1 w-28 font-medium small-caps text-tf-0">First name</span>
-                <input type="text" className="grow" placeholder="First name" />
+                <span className="tf-input-label pl-1 w-28 font-medium font-mono text-tf-0">First name</span>
+                <input type="text" className="grow text-sm" placeholder="First name" />
               </label>
               <label className="input flex items-center gap-2 tf-input tf-input-bottom">
-                <span className="tf-input-label pl-1 w-28 font-medium small-caps text-tf-0">Last name</span>
-                <input type="text" className="grow" placeholder="Last name" />
+                <span className="tf-input-label pl-1 w-28 font-medium font-mono text-tf-0">Last name</span>
+                <input type="text" className="grow text-sm" placeholder="Last name" />
               </label>
             </div>
             <button className="btn" id="generate-btn">

@@ -8,6 +8,8 @@ React front-end for [TrollFactory](https://github.com/stanislavovsky/TrollFactor
 
 ## Development
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/52d3f97c95b043228454054a7e4196aa)](https://app.codacy.com/gh/stanislavovsky/TrollFactory-Web?utm_source=github.com&utm_medium=referral&utm_content=stanislavovsky/TrollFactory-Web&utm_campaign=Badge_Grade)
+
 After installing the `trollfactory` Python package, clone this repository:
 
 ```bash

@@ -5,10 +5,10 @@ export default function Home() {
         <img src="/sparkle.png" className="absolute left-1/10 top-1/6" />
         <img src="/sparkle1.png" className="absolute top-1/4 right-1/10" />
         <img src="/sparkle.png" className="absolute bottom-1/4 left-1/3" />
-        <div className="m-auto">
-          <h1 className="tf-logo font-bold text-center text-4xl md:text-5xl lg:text-6xl">TrollFactory</h1>
+        <div className="m-auto p-2">
+          <h1 className="tf-logo font-bold text-center text-3xl md:text-5xl lg:text-6xl">TrollFactory</h1>
           <div className="card bg-wt-50 mt-7 mb-10 md:mb-20">
-            <div className="card-body">
+            <div className="card-body p-3 md:p-8">
               <select className="input tf-input tf-input-top text-tf-0 select font-medium text-sm md:text-base text-last-center w-full">
                 <option disabled selected>Dataset</option>
                 <option>🇵🇱 polski / Polska</option>

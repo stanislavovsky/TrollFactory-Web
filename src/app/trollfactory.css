@@ -12,15 +12,27 @@
   color: var(--color-lavender-amethyst);
 }
 
+.text-wt-90 {
+  color: rgb(255 255 255 / 90%);
+}
+
 .bg-wt-50 {
   background: rgb(255 255 255 / 50%);
 }
 
+@media (prefers-color-scheme: dark) {
+  .dark-bg-bt-50 {
+    background: rgb(0 0 0 / 50%);
+  }
+
+  .dark-text-bt-70 {
+    color: rgb(0 0 0 / 70%);
+  }
+}
 
 /* TrollFactory logo */
 
 .tf-logo {
-  color: rgb(255 255 255 / 90%);
   font-family: 'Lexend Zetta', sans-serif;
   font-optical-sizing: auto;
 }
@@ -38,6 +50,20 @@
 .tf-input:focus-within,
 .tf-input:hover {
   background: rgb(255 255 255 / 80%);
+}
+
+@media (prefers-color-scheme: dark) {
+  .tf-input {
+    background: rgb(255 255 255 / 5%) !important;  /* TODO: don't use !important */
+    transition: all 0.2s;
+  }
+
+  .tf-input:active,
+  .tf-input:focus,
+  .tf-input:focus-within,
+  .tf-input:hover {
+    background: rgb(255 255 255 / 10%) !important;
+  }
 }
 
 .tf-input-top {
@@ -77,4 +103,15 @@
 
 @keyframes bg-grid-scroll {
   100% { background-position: 150px 150px }
+}
+
+@media (prefers-color-scheme: dark) {
+  .tf-bg-blur {
+    background-image: url('/bg-dark.png');
+  }
+
+  .tf-bg-grid {
+    background-image: linear-gradient(rgb(0 0 0 / 20%) 1px, transparent 1px),
+                      linear-gradient(to right, rgb(0 0 0 / 20%) 1px, transparent 1px);
+  }
 }

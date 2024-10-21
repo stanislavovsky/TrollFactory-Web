@@ -4,12 +4,12 @@ export default function Home() {
   return (
     <div className="tf-bg-blur font-mono">
       <div className="flex h-screen tf-bg-grid">
-        <Image src="/sparkle.png" alt="" className="absolute left-1/10 top-1/6" width={64} height={72} />
-        <Image src="/sparkle1.png" alt="" className="absolute top-1/4 right-1/10" width={67} height={143} />
-        <Image src="/sparkle.png" alt="" className="absolute bottom-1/4 left-1/3" width={64} height={72} />
+        <Image src="/sparkle.png" alt="" className="absolute dark:invert left-1/10 top-1/6" width={64} height={72} />
+        <Image src="/sparkle1.png" alt="" className="absolute dark:invert top-1/4 right-1/10" width={67} height={143} />
+        <Image src="/sparkle.png" alt="" className="absolute dark:invert bottom-1/4 left-1/3" width={64} height={72} />
         <div className="m-auto p-2">
-          <h1 className="tf-logo font-bold text-center text-3xl md:text-5xl lg:text-6xl">TrollFactory</h1>
-          <div className="card bg-wt-50 mt-7 mb-10 md:mb-20">
+          <h1 className="tf-logo text-wt-90 dark-text-bt-70 font-bold text-center text-3xl md:text-5xl lg:text-6xl">TrollFactory</h1>
+          <div className="card bg-wt-50 dark-bg-bt-50 mt-7 mb-10 md:mb-20">
             <div className="card-body p-3 md:p-8">
               <select className="input tf-input tf-input-top text-tf-0 select font-medium text-sm md:text-base text-last-center w-full">
                 <option disabled selected>Dataset</option>

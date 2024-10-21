@@ -1,6 +1,27 @@
+"use client";
+
+import { useState } from 'react';
+import axios from 'axios';
 import Image from 'next/image';
 
 export default function Home() {
+  const [person, setPerson] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  const generatePerson = async () => {
+    setLoading(true);
+    try {
+      const response = await axios.get(`${process.env.NEXT_PUBLIC_TF_API_URL}/generate`);
+      setPerson(response.data);
+      console.log(person);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      setPerson('Error fetching data');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="tf-bg-blur font-mono">
       <div className="flex h-screen tf-bg-grid">
@@ -47,10 +68,14 @@ export default function Home() {
                 <input type="text" className="grow text-sm" placeholder="Last name" />
               </label>
             </div>
-            <button className="btn" id="generate-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-              </svg>
+            <button className="btn" id="generate-btn" onClick={generatePerson} disabled={loading}>
+              {loading ? (
+                <span class="loading loading-ring"></span>
+              ) : (
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>
+              )}
             </button>
           </div>
         </div>

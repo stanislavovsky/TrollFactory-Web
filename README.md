@@ -22,8 +22,14 @@ git clone git@github.com:stanislawowski/TrollFactory-Web.git
 Install the dependencies:
 
 ```bash
-pnpm install  # or your package manager of choice
+pnpm install
 ```
+
+Set the API URL as an environment variable:
+```bash
+echo "NEXT_PUBLIC_TF_API_URL=http://localhost:8000" > .env.local
+```
+
 
 And run the development server:
 

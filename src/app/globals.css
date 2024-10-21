@@ -1,96 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-.logo {
-  font-family: 'Lexend Zetta', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 4rem;
-  color: rgba(255, 255, 255, .9)
-}
-
-#section-quick {
-  background: url('/bg.png') no-repeat;
-  background-size: 140vw 100vh;
-  background-position: center;
-}
-
-#section-quick-content {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
-                    linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
-  background-size: 150px 150px;
-  animation: bg-scrolling 1.5s infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes bg-scrolling { 100% {background-position: 150px 150px} }
-
-h4 {
-  font-size: 1.5rem;
-}
-
-.card-generator {
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.input {
-  background: rgba(255, 255, 255, 0.6);
-  transition: all 0.2s;
-}
-
-.input:active,
-.input:focus,
-.input:focus-within,
-.input:hover {
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.tf-input-label {
-  font-variant: small-caps;
-  font-weight: 500;
-  color: #B271FF;
-  width: 110px;
-  padding-left: 5px;
-}
-
-input,
-.label-text {
-  font-variant: small-caps;
-}
-
-select {
-  font-family: sans-serif;
-  color: #B271FF;
+.text-last-center {
   text-align-last: center;
 }
 
-.sparkle {
-  position: absolute;
-  z-index: 0;
+.small-caps {
+  font-variant: small-caps;
 }
 
-#sparkle-0 {
-  top: 15%;
-  left: 10%;
-}
-
-#sparkle-1 {
-  top: 25%;
+.right-1\/10 {
   right: 10%;
 }
 
-#sparkle-2 {
-  bottom: 20%;
-  left: 40%;
+.left-1\/10 {
+  left: 10%;
 }
+
+.top-1\/6 {
+  top: 16.67%;
+}
+
+
+/* TODO: cleanup & move to trollfactory.css */
 
 #generate-btn {
   background: rgba(255, 255, 255, 0.7);

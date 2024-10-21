@@ -1,3 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+
+:root {
+  --color-lavender-amethyst: #B271FF;
+}
+
+
+/* TrollFactory theme colors */
+
+.text-tf-0 {
+  color: var(--color-lavender-amethyst);
+}
+
+.bg-wt-50 {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+
+/* TrollFactory logo */
+
+.tf-logo {
+  color: rgba(255, 255, 255, .9);
+  font-family: 'Lexend Zetta', sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+/* data input */
+
+.tf-input {
+  background: rgba(255, 255, 255, 0.6);
+  transition: all 0.2s;
+}
+
+.tf-input:active,
+.tf-input:focus,
+.tf-input:focus-within,
+.tf-input:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
 .tf-input-top {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -14,4 +55,25 @@
   border-bottom-right-radius: 11px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+}
+
+
+/* backgrounds */
+
+.tf-bg-blur {
+  background: url('/bg.png') no-repeat;
+  background-size: 140vw 100vh;
+  background-position: center;
+}
+
+.tf-bg-grid {
+  animation: bg-grid-scroll 1.5s infinite;
+  animation-timing-function: linear;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+                    linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+  background-size: 150px 150px;
+}
+
+@keyframes bg-grid-scroll {
+  100% { background-position: 150px 150px }
 }
